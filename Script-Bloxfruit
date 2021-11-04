@@ -3204,7 +3204,7 @@ for i,v in pairs(game:GetService("Players"):GetChildren()) do
     table.insert(PlayerName ,v.Name)
 end
 
-local win = Flux:Window("MOKURO HUB", "[🌊 SEA 3] Blox Fruits", _G.Color1, _G.Color2, _G.ToggleKey)
+local win = Flux:Window("ROCKET HUB", "[🌊 SEA 3] Blox Fruits", _G.Color1, _G.Color2, _G.ToggleKey)
 
 local AutoFarm = win:Tab("Main", "http://www.roblox.com/asset/?id=7040391851")
 
