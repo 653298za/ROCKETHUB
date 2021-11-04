@@ -5,6 +5,12 @@ if not game:IsLoaded() then
 	until game:IsLoaded()
 end
 
+if _G.Key == "KWPY-FRYU-5LQ4" then
+    print("Whitelist!!")
+else
+        game.Players.localPlayer:Kick("Wrong Key")
+end
+
 if _G.Team == "Pirate" then
 	for i,v in pairs(getconnections(game:GetService("Players").LocalPlayer.PlayerGui.Main.ChooseTeam.Container.Pirates.Frame.ViewportFrame.TextButton.MouseButton1Click)) do
 		v.Function()
@@ -3980,6 +3986,19 @@ end)
 Players:Toggle("Kill Player", "", false, function(vu)
     KillPlayer = vu
 end)
+
+Players:Toggle("Kill Player Over","",false,function(bool)
+                                    KillPlayer = bool
+                                    if KillPlayer == false then
+                                        game.Players:FindFirstChild(SelectedKillPlayer).Character.HumanoidRootPart.Size = Vector3.new(2, 2, 1)
+                                    end
+                                    while KillPlayer do wait()
+                                        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players:FindFirstChild(SelectedKillPlayer).Character.HumanoidRootPart.CFrame * CFrame.new(25, 0, 7)
+                                        game.Players:FindFirstChild(SelectedKillPlayer).Character.HumanoidRootPart.Size = Vector3.new(60,60,60)
+                                        game:GetService'VirtualUser':CaptureController()
+                                        game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
+                                    end
+                                end)
 
 Players:Toggle("Aimbot Gun", "", false, function(vu)
 	Aimbot = vu
