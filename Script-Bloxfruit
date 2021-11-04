@@ -5,10 +5,10 @@ if not game:IsLoaded() then
 	until game:IsLoaded()
 end
 
-if _G.Key == "OUER-TGER-N4JQL" then
+if _G.Key == "RNEY-ELQW-U2LMF" then
     print("Whitelist!!")
 else
-        game.Players.localPlayer:Kick("Keyไม่ตรงแล้วจะรันหาพ่องมึงอะไอควาย")
+        game.Players.localPlayer:Kick("Keyไม่ตรง แล้วจะรันหาพ่อมึงอะ")
 end
 
 if _G.Team == "Pirate" then
@@ -3983,11 +3983,11 @@ Players:Button("Refresh Weapon","",function()
 	end
 end)
 
-Players:Toggle("Kill Player", "", false, function(vu)
+Players:Toggle("Kill Player Over", "", false, function(vu)
     KillPlayer = vu
 end)
 
-Players:Toggle("Kill Player Over","",false,function(bool)
+Players:Toggle("Kill Player","",false,function(bool)
                                     KillPlayer = bool
                                     if KillPlayer == false then
                                         game.Players:FindFirstChild(SelectedKillPlayer).Character.HumanoidRootPart.Size = Vector3.new(2, 2, 1)
