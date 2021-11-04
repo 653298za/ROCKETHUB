@@ -5,7 +5,7 @@ if not game:IsLoaded() then
 	until game:IsLoaded()
 end
 
-if _G.Key == "KELO-RMAS-T4KI" then
+if _G.Key == "UJND-GALE-RF1WP" then
     print("Whitelist!!")
 else
         game.Players.localPlayer:Kick("Keyไม่ตรงแล้วจะรันหาพ่องมึงอะไอควาย อยากได้ก็ไปซื้อ")
