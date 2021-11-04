@@ -8,7 +8,7 @@ end
 if _G.Key == "OUER-TGER-N4JQL" then
     print("Whitelist!!")
 else
-        game.Players.localPlayer:Kick("Wrong Key")
+        game.Players.localPlayer:Kick("Keyไม่ตรงแล้วจะรันหาพ่อมึงอะ")
 end
 
 if _G.Team == "Pirate" then
