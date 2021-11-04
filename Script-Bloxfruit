@@ -5,12 +5,6 @@ if not game:IsLoaded() then
 	until game:IsLoaded()
 end
 
-if _G.Key == "KWPY-FRYU-5LQ4" then
-    print("Whitelist!!")
-else
-        game.Players.localPlayer:Kick("Wrong Key")
-end
-
 if _G.Team == "Pirate" then
 	for i,v in pairs(getconnections(game:GetService("Players").LocalPlayer.PlayerGui.Main.ChooseTeam.Container.Pirates.Frame.ViewportFrame.TextButton.MouseButton1Click)) do
 		v.Function()
