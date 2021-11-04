@@ -5,7 +5,7 @@ if not game:IsLoaded() then
 	until game:IsLoaded()
 end
 
-if _G.Key == "HTML-EYRT-2KJ7A" then
+if _G.Key == "KWPY-FRYU-5LQ4" then
     print("Whitelist!!")
 else
         game.Players.localPlayer:Kick("Wrong Key")
