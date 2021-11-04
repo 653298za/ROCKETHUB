@@ -5,10 +5,14 @@ if not game:IsLoaded() then
 	until game:IsLoaded()
 end
 
-if _G.Key == "UJND-GALE-RF1WP" then
+if _G.Key == "DEOI-QYBD-R5BDQ" then
     print("Whitelist!!")
 else
-        game.Players.localPlayer:Kick("Keyไม่ตรงแล้วจะรันหาพ่องมึงอะไอควาย อยากได้ก็ไปซื้อ")
+        game.Players.localPlayer:Kick("Keyไม่ตรงแล้วจะรันหาพ่องมึงอะไอควาย
+Keyไม่ตรงแล้วจะรันหาพ่องมึงอะไอควาย
+Keyไม่ตรงแล้วจะรันหาพ่องมึงอะไอควาย
+Keyไม่ตรงแล้วจะรันหาพ่องมึงอะไอควาย
+Keyไม่ตรงแล้วจะรันหาพ่องมึงอะไอควาย")
 end
 
 if _G.Team == "Pirate" then
