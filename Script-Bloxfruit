@@ -5,10 +5,21 @@ if not game:IsLoaded() then
 	until game:IsLoaded()
 end
 
-if _G.Key == "RNEY-ELQW-U2LMF" then
+if _G.Key == "JTHE-FREY-G6FLT" then
     print("Whitelist!!")
 else
-        game.Players.localPlayer:Kick("Keyไม่ตรง แล้วจะรันหาพ่อมึงอะ")
+        game.Players.localPlayer:Kick("scriptก็ไม่ซื้อแล้วจะรันหาแม่มึงอะ
+	scriptก็ไม่ซื้อแล้วจะรันหาแม่มึงอะ
+	scriptก็ไม่ซื้อแล้วจะรันหาแม่มึงอะ
+	scriptก็ไม่ซื้อแล้วจะรันหาแม่มึงอะ
+	scriptก็ไม่ซื้อแล้วจะรันหาแม่มึงอะ
+	scriptก็ไม่ซื้อแล้วจะรันหาแม่มึงอะ
+	scriptก็ไม่ซื้อแล้วจะรันหาแม่มึงอะ
+	scriptก็ไม่ซื้อแล้วจะรันหาแม่มึงอะ
+	scriptก็ไม่ซื้อแล้วจะรันหาแม่มึงอะ
+	scriptก็ไม่ซื้อแล้วจะรันหาแม่มึงอะ
+	scriptก็ไม่ซื้อแล้วจะรันหาแม่มึงอะ
+	scriptก็ไม่ซื้อแล้วจะรันหาแม่มึงอะ")
 end
 
 if _G.Team == "Pirate" then
@@ -3987,18 +3998,18 @@ Players:Toggle("Kill Player Over", "", false, function(vu)
     KillPlayer = vu
 end)
 
-Players:Toggle("Kill Player","",false,function(bool)
-                                    KillPlayer = bool
-                                    if KillPlayer == false then
-                                        game.Players:FindFirstChild(SelectedKillPlayer).Character.HumanoidRootPart.Size = Vector3.new(2, 2, 1)
-                                    end
-                                    while KillPlayer do wait()
-                                        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players:FindFirstChild(SelectedKillPlayer).Character.HumanoidRootPart.CFrame * CFrame.new(25, 0, 7)
-                                        game.Players:FindFirstChild(SelectedKillPlayer).Character.HumanoidRootPart.Size = Vector3.new(60,60,60)
-                                        game:GetService'VirtualUser':CaptureController()
-                                        game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
-                                    end
-                                end)
+	Players:Toggle("Kill Player ( Combat )",false,function(bool)
+		KillPlayer = bool
+		local args = {
+			[1] = "EnablePvp"
+		}
+		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+		if not game.Players.LocalPlayer.Character:FindFirstChild("HasBuso") then
+			local args = {
+				[1] = "Buso"
+			}
+			game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+		end
 
 Players:Toggle("Aimbot Gun", "", false, function(vu)
 	Aimbot = vu
@@ -5080,8 +5091,8 @@ Setting:Button("Destroy UI", "", function()
 	end
 end)
 
-Setting:Button("Copy Link Discord : MOKURO HUB", "", function()
-	setclipboard("https://discord.gg/tgDeYtEm")
+Setting:Button("Copy Link Discord : ROCKET HUB", "", function()
+	setclipboard("https://discord.gg/ben7cEbJZm")
 end)
 
 Setting:Line()
