@@ -5,14 +5,10 @@ if not game:IsLoaded() then
 	until game:IsLoaded()
 end
 
-if _G.Key == "DEOI-QYBD-R5BDQ" then
+if _G.Key == "GUWE-AMSD-T4UKC" then
     print("Whitelist!!")
 else
-        game.Players.localPlayer:Kick("Keyไม่ตรงแล้วจะรันหาพ่องมึงอะไอควาย
-Keyไม่ตรงแล้วจะรันหาพ่องมึงอะไอควาย
-Keyไม่ตรงแล้วจะรันหาพ่องมึงอะไอควาย
-Keyไม่ตรงแล้วจะรันหาพ่องมึงอะไอควาย
-Keyไม่ตรงแล้วจะรันหาพ่องมึงอะไอควาย")
+        game.Players.localPlayer:Kick("Keyไม่ตรงแล้วรันหาแม่มึงดิ")
 end
 
 if _G.Team == "Pirate" then
@@ -35,8 +31,8 @@ pcall(function()
     setfpscap(69420)
 end)
 
-if game:GetService("CoreGui"):FindFirstChild("MOKURO Gui") then
-    game:GetService("CoreGui"):FindFirstChild("MOKURO Gui"):Destroy()
+if game:GetService("CoreGui"):FindFirstChild("ROCKET Gui") then
+    game:GetService("CoreGui"):FindFirstChild("ROCKET Gui"):Destroy()
 end
 local R = math.random(0,255)
 local G = math.random(0,255)
@@ -53,7 +49,7 @@ local Mouse = LocalPlayer:GetMouse()
 local CloseBind = Enum.KeyCode.RightControl
 
 local FluxLib = Instance.new("ScreenGui")
-FluxLib.Name = "MOKURO Gui"
+FluxLib.Name = "ROCKET Gui"
 FluxLib.Parent = game.CoreGui
 FluxLib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
@@ -3987,22 +3983,9 @@ Players:Button("Refresh Weapon","",function()
 	end
 end)
 
-Players:Toggle("Kill Player Over", "", false, function(vu)
+Players:Toggle("Kill Player", "", false, function(vu)
     KillPlayer = vu
 end)
-
-Players:Toggle("Kill Player(50%)","",false,function(bool)
-                                    KillPlayer = bool
-                                    if KillPlayer == false then
-                                        game.Players:FindFirstChild(SelectedKillPlayer).Character.HumanoidRootPart.Size = Vector3.new(2, 2, 1)
-                                    end
-                                    while KillPlayer do wait()
-                                        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players:FindFirstChild(SelectedKillPlayer).Character.HumanoidRootPart.CFrame * CFrame.new(25, 0, 7)
-                                        game.Players:FindFirstChild(SelectedKillPlayer).Character.HumanoidRootPart.Size = Vector3.new(60,60,60)
-                                        game:GetService'VirtualUser':CaptureController()
-                                        game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
-                                    end
-                                end)
 
 Players:Toggle("Aimbot Gun", "", false, function(vu)
 	Aimbot = vu
